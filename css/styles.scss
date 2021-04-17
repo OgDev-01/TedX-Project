@@ -80,12 +80,12 @@
 
       @media screen and(min-width: 44em) {
         width: 200px;
-      height: 200px;
-      position: absolute;
-      background: #f8f9fb;
-      z-index: 2;
-      top: 1100px;
-      right: 0;
+        height: 200px;
+        position: absolute;
+        background: #f8f9fb;
+        z-index: 2;
+        top: 1100px;
+        right: 0;
       }
     }
     .gradient {
@@ -486,8 +486,7 @@
         position: relative;
         top: 20px;
 
-        @media screen and(min-width: 44em){
-          
+        @media screen and(min-width: 44em) {
         }
       }
 
@@ -865,31 +864,52 @@
           .s-card-head {
             width: 100%;
             height: 75%;
-            // background: red;
+            background: red;
             border-radius: 20px;
+            position: relative;
           }
           .one {
-            background: url(/images/coe-1.png);
+            background: url(/images/speaker-1.png);
             background-repeat: no-repeat;
             background-size: 100% 100%;
           }
           .two {
-            background: url(/images/ceo-2.png);
+            background: url(/images/speaker-2.png);
             background-repeat: no-repeat;
             background-size: 100% 100%;
           }
           .three {
-            background: url(/images/ceo-3.png);
+            background: url(/images/speaker-3.png);
             background-repeat: no-repeat;
             background-size: 100% 100%;
           }
           .four {
-            background: url(/images/ceo-4.png);
+            background: url(/images/speaker-4.png);
             background-repeat: no-repeat;
             background-size: 100% 100%;
           }
           .five {
-            background: url(/images/coe-5.png);
+            background: url(/images/speaker-5.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+          }
+          .six {
+            background: url(/images/speaker-6.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+          }
+          .seven {
+            background: url(/images/speaker-7.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+          }
+          .eight {
+            background: url(/images/speaker-9.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+          }
+          .nine {
+            background: url(/images/speaker-2.png);
             background-repeat: no-repeat;
             background-size: 100% 100%;
           }

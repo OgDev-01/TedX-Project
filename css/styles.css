@@ -1027,35 +1027,61 @@
 * .container .speakers-wrap .s-card-grid .speaker-card .s-card-head {
   width: 100%;
   height: 75%;
+  background: red;
   border-radius: 20px;
+  position: relative;
 }
 
 * .container .speakers-wrap .s-card-grid .speaker-card .one {
-  background: url(/images/coe-1.png);
+  background: url(/images/speaker-1.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 * .container .speakers-wrap .s-card-grid .speaker-card .two {
-  background: url(/images/ceo-2.png);
+  background: url(/images/speaker-2.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 * .container .speakers-wrap .s-card-grid .speaker-card .three {
-  background: url(/images/ceo-3.png);
+  background: url(/images/speaker-3.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 * .container .speakers-wrap .s-card-grid .speaker-card .four {
-  background: url(/images/ceo-4.png);
+  background: url(/images/speaker-4.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 * .container .speakers-wrap .s-card-grid .speaker-card .five {
-  background: url(/images/coe-5.png);
+  background: url(/images/speaker-5.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+* .container .speakers-wrap .s-card-grid .speaker-card .six {
+  background: url(/images/speaker-6.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+* .container .speakers-wrap .s-card-grid .speaker-card .seven {
+  background: url(/images/speaker-7.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+* .container .speakers-wrap .s-card-grid .speaker-card .eight {
+  background: url(/images/speaker-9.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+* .container .speakers-wrap .s-card-grid .speaker-card .nine {
+  background: url(/images/speaker-2.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
