@@ -1120,7 +1120,7 @@
           }
 
           .social-icon {
-            width: 100%;
+            width: 70%;
             height: 40px;
             display: flex;
             align-items: center;
@@ -1128,7 +1128,18 @@
             margin-top: 15px;
             padding: 0 20px 0 23px;
             // background: yellow;
-
+            @media screen and (min-width: 44em) {
+              width: 80%;
+              height: 40px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-top: 15px;
+              padding: 0 20px 0 23px;
+            }
+            @media (min-width: 25em) and (max-width: 50em) {
+              width: 80%;
+            }
             a {
               width: 25%;
               // background: url(/images/Group.png);
@@ -1136,6 +1147,15 @@
               //   margin-top: 5px;
               display: block;
               height: 80%;
+
+              @media screen and (min-width: 44em) {
+                width: 25%;
+                // background: url(/images/Group.png);
+                background-repeat: no-repeat;
+                //   margin-top: 5px;
+                display: block;
+                height: 80%;
+              }
             }
 
             .fb {
