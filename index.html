@@ -79,7 +79,12 @@
           fearlessness, and <br />
           redefine how we march forward.
         </p>
-        <a href="#" class="contact-btn">Contact Us</a>
+        <a
+          style="border: none; cursor: pointer"
+          class="contact-btn animate__animated"
+        >
+          Buy a Ticket
+        </a>
 
         <article class="caption-wrap">
           <div
@@ -188,20 +193,6 @@
             <div class="s-card-body">
               <h3 class="name">Virtue Oboro</h3>
               <p class="position">Social Entreprenue</p>
-            </div>
-          </div>
-          <div class="speaker-card">
-            <div class="s-card-head nine"></div>
-            <div class="s-card-body">
-              <h3 class="name">Iyin Aboyeji</h3>
-              <p class="position">CEO Flutter wave</p>
-            </div>
-          </div>
-          <div class="speaker-card">
-            <div class="s-card-head one"></div>
-            <div class="s-card-body">
-              <h3 class="name">Iyin Aboyeji</h3>
-              <p class="position">CEO Flutter wave</p>
             </div>
           </div>
         </div>
@@ -395,13 +386,24 @@
             <h3>Odoni Peres</h3>
             <p>Designer</p>
             <div class="social-icon">
-              <a href="https://web.facebook.com/peres.odoni" target="_blank" class="fb"></a>
-              <a href="https://www.instagram.com/peresodoni/" target="_blank" class="insta"></a>
-              <a href="https://twitter.com/peresodoni" target="_blank" class="twt"></a>
+              <a
+                href="https://web.facebook.com/peres.odoni"
+                target="_blank"
+                class="fb"
+              ></a>
+              <a
+                href="https://www.instagram.com/peresodoni/"
+                target="_blank"
+                class="insta"
+              ></a>
+              <a
+                href="https://twitter.com/peresodoni"
+                target="_blank"
+                class="twt"
+              ></a>
             </div>
           </div>
-         
-          
+
           <div class="team-card">
             <div
               class="img-contain"
@@ -462,8 +464,6 @@
               ></a>
             </div>
           </div>
-          
-          
         </div>
       </div>
 
@@ -512,10 +512,78 @@
         <i class="material-icons">arrow_upward</i>
       </button>
 
+      <div class="buy-ticket-wrap animate__animated">
+        <form action="/action_page.php" class="buy-ticket">
+          <div class="form-legend">
+            <legend>Buy a Ticket</legend>
+            <span class="material-icons cancel" style="cursor: pointer"
+              >cancel</span
+            >
+          </div>
+          <div class="form-body">
+            <input type="text" class="f-name" placeholder="Enter Full name" />
+            <input
+              type="email"
+              class="email"
+              placeholder="Enter Email address"
+            />
+            <input
+              type="tel"
+              class="phone"
+              pattern="[+]{1}[0-9]{11,14}"
+              placeholder="Enter phone number"
+            />
+
+            <center>
+              <div class="food-reserve">Let's talk about Food</div>
+            </center>
+            <div class="double-sec">
+              <div class="right-sec">
+                <label for="breakfast">What do you want for Breakfast?</label>
+                <div class="custom-select">
+                  <select name="breakfast" id="breakfast">
+                    <option value="0">select breakfast</option>
+                    <option value="1">Fried Rice</option>
+                    <option value="2">Jollof Rice</option>
+                    <option value="3">Fried Egg and Loaf</option>
+                    <option value="4">Tea and Loaf</option>
+                  </select>
+                </div>
+                <label for="breakfast">What do you want for launch?</label>
+                <div class="custom-select">
+                  <select name="breakfast" id="breakfast">
+                    <option value="0">select launch</option>
+                    <option value="1">select breakfast</option>
+                    <option value="2">select breakfast</option>
+                    <option value="3">select breakfast</option>
+                    <option value="4">select breakfast</option>
+                  </select>
+                </div>
+                <label for="breakfast">What do you want for dinner?</label>
+                <div class="custom-select">
+                  <select name="breakfast" id="breakfast">
+                    <option value="0">select dinner</option>
+                    <option value="1">select breakfast</option>
+                    <option value="2">select breakfast</option>
+                    <option value="3">select breakfast</option>
+                    <option value="4">select breakfast</option>
+                  </select>
+                </div>
+              </div>
+              <div class="left-sec">
+                <figure>Total</figure>
+                <div class="price">N3000</div>
+                <button type="submit" class="proceed">
+                  Proceed to payment
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
       <!-- Jquery Cdn linking -->
-      <script
-        src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-      ></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
       <!-- javascript -->
       <script src="/js/main.js"></script>
