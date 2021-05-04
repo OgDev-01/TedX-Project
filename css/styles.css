@@ -1493,9 +1493,8 @@
   background: transparent;
 }
 
-* .container .foot .foot-form-wrap input :active {
-  background: #ffffff;
-  border: none;
+* .container .foot .foot-form-wrap .subsribe:focus {
+  outline: none;
 }
 
 * .container .foot .foot-form-wrap a {
@@ -1754,12 +1753,31 @@
 }
 
 .buy-ticket-wrap .buy-ticket {
-  width: 45%;
-  height: 90%;
+  width: 90%;
+  height: 80%;
   background-color: #ffffff;
   overflow-y: auto;
   position: relative;
   border-radius: 30px;
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.buy-ticket-wrap .buy-ticket::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (min-width: 44em) {
+  .buy-ticket-wrap .buy-ticket {
+    width: 45%;
+    height: 90%;
+    background-color: #ffffff;
+    overflow-y: auto;
+    position: relative;
+    border-radius: 30px;
+  }
 }
 
 .buy-ticket-wrap .buy-ticket .form-legend {
@@ -1789,8 +1807,17 @@
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@media screen and (min-width: 44em) {
+  .buy-ticket-wrap .buy-ticket .form-body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
 }
 
 .buy-ticket-wrap .buy-ticket .form-body input {
@@ -1798,15 +1825,20 @@
   width: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.308);
   margin-top: 15px;
-  height: 40px;
+  height: 26px;
+  font-size: 15px;
+  font-family: "DM Sans";
+}
+
+.buy-ticket-wrap .buy-ticket .form-body input:focus {
+  outline: none;
 }
 
 .buy-ticket-wrap .buy-ticket .form-body input::-webkit-input-placeholder {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: normal;
-  font-size: 17px;
-  line-height: 191.7%;
+  font-size: 15px;
   /* identical to box height, or 33px */
   letter-spacing: -0.03em;
   color: #000000;
@@ -1817,8 +1849,7 @@
   font-family: "DM Sans";
   font-style: normal;
   font-weight: normal;
-  font-size: 17px;
-  line-height: 191.7%;
+  font-size: 15px;
   /* identical to box height, or 33px */
   letter-spacing: -0.03em;
   color: #000000;
@@ -1829,8 +1860,7 @@
   font-family: "DM Sans";
   font-style: normal;
   font-weight: normal;
-  font-size: 17px;
-  line-height: 191.7%;
+  font-size: 15px;
   /* identical to box height, or 33px */
   letter-spacing: -0.03em;
   color: #000000;
@@ -1841,24 +1871,95 @@
   font-family: "DM Sans";
   font-style: normal;
   font-weight: normal;
-  font-size: 17px;
-  line-height: 191.7%;
+  font-size: 15px;
   /* identical to box height, or 33px */
   letter-spacing: -0.03em;
   color: #000000;
   opacity: 0.5;
 }
 
+@media screen and (min-width: 44em) {
+  .buy-ticket-wrap .buy-ticket .form-body input::-webkit-input-placeholder {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 191.7%;
+    /* identical to box height, or 33px */
+    letter-spacing: -0.03em;
+    color: #000000;
+    opacity: 0.5;
+  }
+  .buy-ticket-wrap .buy-ticket .form-body input:-ms-input-placeholder {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 191.7%;
+    /* identical to box height, or 33px */
+    letter-spacing: -0.03em;
+    color: #000000;
+    opacity: 0.5;
+  }
+  .buy-ticket-wrap .buy-ticket .form-body input::-ms-input-placeholder {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 191.7%;
+    /* identical to box height, or 33px */
+    letter-spacing: -0.03em;
+    color: #000000;
+    opacity: 0.5;
+  }
+  .buy-ticket-wrap .buy-ticket .form-body input::placeholder {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 191.7%;
+    /* identical to box height, or 33px */
+    letter-spacing: -0.03em;
+    color: #000000;
+    opacity: 0.5;
+  }
+}
+
+@media screen and (min-width: 44em) {
+  .buy-ticket-wrap .buy-ticket .form-body input {
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.308);
+    margin-top: 15px;
+    height: 40px;
+    font-size: 17px;
+  }
+}
+
 .buy-ticket-wrap .buy-ticket .form-body .food-reserve {
-  font-family: DM Sans;
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 20px;
   line-height: 36px;
   letter-spacing: -0.03em;
   color: #000000;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 44em) {
+  .buy-ticket-wrap .buy-ticket .form-body .food-reserve {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.03em;
+    color: #000000;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .buy-ticket-wrap .buy-ticket .form-body .double-sec {
@@ -1866,11 +1967,28 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 44em) {
+  .buy-ticket-wrap .buy-ticket .form-body .double-sec {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .buy-ticket-wrap .buy-ticket .form-body .double-sec label {
   display: block;
-  font-family: DM Sans;
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 13px;
@@ -1890,8 +2008,17 @@
 .buy-ticket-wrap .buy-ticket .form-body .double-sec .right-sec .custom-select {
   width: 90%;
   position: relative;
-  height: 50px;
+  height: 30px;
   margin-bottom: 5px;
+}
+
+@media screen and (min-width: 44em) {
+  .buy-ticket-wrap .buy-ticket .form-body .double-sec .right-sec .custom-select {
+    width: 90%;
+    position: relative;
+    height: 50px;
+    margin-bottom: 5px;
+  }
 }
 
 .buy-ticket-wrap .buy-ticket .form-body .double-sec .right-sec .custom-select select {
@@ -1927,6 +2054,19 @@
   left: 0;
   right: 0;
   z-index: 99;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+@media screen and (min-width: 44em) {
+  .buy-ticket-wrap .buy-ticket .form-body .double-sec .right-sec .custom-select .select-items {
+    position: absolute;
+    background-color: #ffffff;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+  }
 }
 
 .buy-ticket-wrap .buy-ticket .form-body .double-sec .right-sec .custom-select .select-items div,
@@ -1945,12 +2085,38 @@
   font-family: "DM Sans";
   font-style: normal;
   font-weight: normal;
-  font-size: 17px;
-  line-height: 191.7%;
+  font-size: 13px;
+  line-height: 100.7%;
   /* identical to box height, or 33px */
   letter-spacing: -0.03em;
   color: #000000;
   text-align: left;
+}
+
+@media screen and (min-width: 44em) {
+  .buy-ticket-wrap .buy-ticket .form-body .double-sec .right-sec .custom-select .select-items div,
+  .buy-ticket-wrap .buy-ticket .form-body .double-sec .right-sec .custom-select .select-selected {
+    color: #000000;
+    padding: 8px 0px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    opacity: 0.6;
+    text-transform: capitalize;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 191.7%;
+    /* identical to box height, or 33px */
+    letter-spacing: -0.03em;
+    color: #000000;
+    text-align: left;
+  }
 }
 
 .buy-ticket-wrap .buy-ticket .form-body .double-sec .right-sec .custom-select .select-hide {
@@ -1969,16 +2135,34 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+@media screen and (min-width: 44em) {
+  .buy-ticket-wrap .buy-ticket .form-body .double-sec .left-sec {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .buy-ticket-wrap .buy-ticket .form-body .double-sec .left-sec figure {
@@ -1990,35 +2174,110 @@
   /* identical to box height */
   letter-spacing: -0.03em;
   color: #000000;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  position: relative;
+  left: 12px;
+  top: 10px;
+}
+
+@media screen and (min-width: 44em) {
+  .buy-ticket-wrap .buy-ticket .form-body .double-sec .left-sec figure {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height */
+    letter-spacing: -0.03em;
+    color: #000000;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    left: 0;
+    top: 0;
+  }
 }
 
 .buy-ticket-wrap .buy-ticket .form-body .double-sec .left-sec .price {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: bold;
-  font-size: 34px;
+  font-size: 22px;
   line-height: 44px;
   text-align: right;
   letter-spacing: -0.03em;
   color: #e84c3d;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  position: relative;
+  right: -20px;
+  top: 10px;
+}
+
+@media screen and (min-width: 44em) {
+  .buy-ticket-wrap .buy-ticket .form-body .double-sec .left-sec .price {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 44px;
+    text-align: right;
+    letter-spacing: -0.03em;
+    color: #e84c3d;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    right: 0;
+    top: 0;
+  }
 }
 
 .buy-ticket-wrap .buy-ticket .form-body .double-sec .left-sec .proceed {
-  width: 80%;
+  width: 50%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
   height: 50px;
   border-radius: 20px;
   border: none;
   background: #e84c3d;
-  font-family: DM Sans;
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 34px;
   /* identical to box height */
   text-align: center;
   letter-spacing: -0.03em;
   color: #ffffff;
   margin-top: 20px;
+  padding: 6px;
+}
+
+@media screen and (min-width: 44em) {
+  .buy-ticket-wrap .buy-ticket .form-body .double-sec .left-sec .proceed {
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    background: #e84c3d;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 34px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+    margin-top: 10px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
 }
 
 .buy-reveal {
