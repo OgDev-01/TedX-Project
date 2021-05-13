@@ -5,6 +5,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap");
+
 // ::-webkit-scrollbar {
 //   width: 50px;
 // }
@@ -42,7 +46,7 @@
       height: 50px;
       border-radius: 50%;
       outline: none;
-      background-color: rgba(232, 76, 61, 1);
+      background-color: rgba(226, 42, 26, 0.89);
       color: #ffffff;
       z-index: 5;
       background-size: 100% 100%;
@@ -64,7 +68,7 @@
       }
     }
     .btnScrollToTop:hover {
-      background-color: rgb(231, 63, 63);
+      background-color: #ff0000;
       transform: scale(1.1);
       transition: all 0.5s ease-in-out;
     }
@@ -329,7 +333,7 @@
         letter-spacing: -0.03em;
         font-style: normal;
         font-weight: normal;
-        color: #e84c3d;
+        color: #ff0000;
       }
       .dot {
         width: 5px;
@@ -342,7 +346,7 @@
         font-family: "DM Sans", sans-serif;
         line-height: 22px;
         letter-spacing: -0.03em;
-        color: #e84c3d;
+        color: #ff0000;
         font-style: normal;
         font-weight: normal;
       }
@@ -361,7 +365,7 @@
         letter-spacing: -0.03em;
         font-style: normal;
         font-weight: normal;
-        color: #e84c3d;
+        color: #ff0000;
       }
     }
 
@@ -384,8 +388,6 @@
       }
 
       h2 {
-        font-family: "DM Sans", sans-serif;
-        color: #e84c3d;
         font-style: normal;
         font-weight: bold;
         font-size: 30px;
@@ -393,16 +395,21 @@
         /* identical to box height */
         margin-bottom: 15px;
         letter-spacing: -0.03em;
+        color: #ff0000;
+        font-family: "Montserrat", sans-serif;
 
         @media screen and(min-width: 44em) {
-          font-family: DM Sans;
           font-style: normal;
-          font-weight: bold;
-          font-size: 50px;
-          line-height: 78px;
+          font-weight: 900;
+          font-size: 60px;
+          line-height: 73px;
           letter-spacing: -0.03em;
 
-          color: #e84c3d;
+          color: #ff0000;
+        }
+        span {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 500;
         }
       }
 
@@ -415,18 +422,29 @@
         letter-spacing: 0.01em;
         font-family: "DM Sans", sans-serif;
         color: #000000;
-        margin-top: -10px;
+        margin-top: 0px;
+        margin-bottom: 15px;
+        background: url(/images/inverse.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 80%;
+        height: 70px;
 
         @media screen and(min-width: 44em) {
-          font-family: DM Sans;
+          // font-family: DM Sans;
           font-style: normal;
           font-weight: bold;
           font-size: 80px;
           line-height: 104px;
           text-align: center;
           letter-spacing: -0.03em;
-          margin-top: -20px;
-          color: #000000;
+          margin-top: -10px;
+          // color: #000000;
+          width: 35%;
+          height: 85px;
+          background: url(/images/inverse.png);
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
         }
         br {
           @media screen and(max-width: 44em) {
@@ -435,7 +453,7 @@
         }
       }
       .lorem {
-        font-family: DM Sans;
+        font-family: "DM Sans";
         font-style: normal;
         font-weight: normal;
         font-size: 15px;
@@ -450,7 +468,7 @@
 
         opacity: 0.7;
         @media screen and(min-width: 44em) {
-          font-family: DM Sans;
+          font-family: "DM Sans";
           font-style: normal;
           font-weight: normal;
           font-size: 18px;
@@ -479,7 +497,7 @@
         justify-content: center;
         padding: 13px 51px;
         text-decoration: none;
-        background: #e84c3d;
+        background: #ff0000;
         border-radius: 20px;
         color: #ffffff;
         font-family: "DM Sans", sans-serif;
@@ -508,7 +526,7 @@
         .caption-large {
           grid-row: 1 / 8;
           grid-column: 2 / 20;
-          background: url(/images/Caption.png);
+          background: url(/images/tedx-anchor.png);
           background-repeat: no-repeat;
           background-size: 100% 100%;
 
@@ -633,24 +651,25 @@
         grid-gap: 15px;
         width: 100%;
         margin-top: 10px;
+        padding: 10px;
         // align-items: center;
 
         .mastercard {
           grid-column: 1/ 10;
           grid-row: 1/ 9;
-          background-image: url(/images/image2.png);
+          background-image: url(/images/soft-partner.png);
           background-color: #ffffff;
           /* soft blur 1 */
           background-position: center;
           background-repeat: no-repeat;
           //   background-attachment: fixed;
-          background-size: 50%;
+          background-size: 85% 27%;
           box-shadow: -10px 10px 60px rgba(95, 5, 0, 0.2);
           border-radius: 50%;
 
           @media screen and(min-width: 44em) {
-            grid-column: 1/ 4;
-            grid-row: 3/ 10;
+            grid-column: 1/ 5;
+            grid-row: 4/ 13;
           }
         }
 
@@ -674,20 +693,20 @@
         }
 
         .java {
-          grid-column: 18/ 26;
+          grid-column: 15/ 23;
           grid-row: 1/ 8;
-          background-image: url(/images/java.png);
+          background-image: url(/images/a2.png);
           background-color: #ffffff;
           /* soft blur 1 */
           background-position: center;
           background-repeat: no-repeat;
           //   background-attachment: fixed;
-          background-size: 50%;
+          background-size: 80%;
           box-shadow: -10px 10px 60px rgba(95, 5, 0, 0.2);
           border-radius: 50%;
 
           @media screen and(min-width: 44em) {
-            grid-column: 12/ 15;
+            grid-column: 9/ 12;
             grid-row: 2/ 9;
           }
         }
@@ -712,9 +731,9 @@
         }
 
         .figma {
-          grid-column: 10/ 17;
-          grid-row: 6/ 12;
-          background-image: url(/images/figma.png);
+          grid-column: 14/ 21;
+          grid-row: 17/ 23;
+          background-image: url(/images/bontel.png);
           background-color: #ffffff;
           /* soft blur 1 */
           background-position: center;
@@ -725,27 +744,27 @@
           border-radius: 50%;
 
           @media screen and(min-width: 44em) {
-            grid-column: 23/ 25;
-            grid-row: 3/ 8;
+            grid-column: 21/ 24;
+            grid-row: 10/ 16;
           }
         }
 
         .swift {
-          grid-column: 18/ 25;
-          grid-row: 8/ 14;
-          background-image: url(/images/swift.png);
+          grid-column: 16/ 23;
+          grid-row: 10/ 16;
+          background-image: url(/images/Lets-talk.png);
           background-color: #ffffff;
           /* soft blur 1 */
           background-position: center;
           background-repeat: no-repeat;
           //   background-attachment: fixed;
-          background-size: 50%;
+          background-size: 80%;
           box-shadow: -10px 10px 60px rgba(95, 5, 0, 0.2);
           border-radius: 50%;
 
           @media screen and(min-width: 44em) {
-            grid-column: 14/ 16;
-            grid-row: 12/ 16;
+            grid-column: 13/ 15;
+            grid-row: 11/ 16;
           }
         }
         .invision {
@@ -768,40 +787,40 @@
         }
 
         .kotlin {
-          grid-column: 9/ 18;
-          grid-row: 12/ 20;
-          background-image: url(/images/jb_kotlin.png);
+          grid-column: 7/ 14;
+          grid-row: 9/ 15;
+          background-image: url(/images/naija-food.png);
           background-color: #ffffff;
           /* soft blur 1 */
           background-position: center;
           background-repeat: no-repeat;
           //   background-attachment: fixed;
-          background-size: 50%;
+          background-size: 80%;
           box-shadow: -10px 10px 60px rgba(95, 5, 0, 0.2);
           border-radius: 50%;
 
           @media screen and(min-width: 44em) {
-            grid-column: 8/ 11;
+            grid-column: 6/ 9;
             grid-row: 10/ 17;
           }
         }
 
         .notion {
-          grid-column: 19/ 25;
-          grid-row: 15/ 20;
-          background-image: url(/images/notion.png);
+          grid-column: 3/ 10;
+          grid-row: 15/ 21;
+          background-image: url(/images/genesis-partner.png);
           background-color: #ffffff;
           /* soft blur 1 */
           background-position: center;
           background-repeat: no-repeat;
           //   background-attachment: fixed;
-          background-size: 50%;
+          background-size: 80%;
           box-shadow: -10px 10px 60px rgba(95, 5, 0, 0.2);
           border-radius: 50%;
 
           @media screen and(min-width: 44em) {
-            grid-column: 18/ 21;
-            grid-row: 8/ 15;
+            grid-column: 17/ 20;
+            grid-row: 3/ 10;
           }
         }
 
@@ -817,11 +836,11 @@
       // background: red;
 
       @media screen and(min-width: 44em) {
-        padding: 25px 200px;
+        padding: 25px 150px;
       }
 
       h2 {
-        font-family: DM Sans;
+        font-family: "DM Sans";
         font-style: normal;
         font-weight: bold;
         font-size: 34px;
@@ -850,12 +869,13 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         grid-auto-rows: 212px;
-        grid-gap: 15px;
+        grid-gap: 10px;
         margin-top: 35px;
 
         @media screen and(min-width: 44em) {
           grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
           grid-auto-rows: 245px;
+          grid-gap: 100px;
         }
 
         .speaker-card {
@@ -924,7 +944,7 @@
             margin-top: 10px;
 
             .name {
-              font-family: DM Sans;
+              font-family: "DM Sans";
               font-style: normal;
               font-weight: bold;
               font-size: 20px;
@@ -934,7 +954,7 @@
               text-align: center;
               letter-spacing: -0.03em;
 
-              color: #000000;
+              color: #ff2b06;
             }
 
             .position {
@@ -1026,7 +1046,7 @@
       }
 
       h2 {
-        font-family: DM Sans;
+        font-family: "DM Sans";
         font-style: normal;
         font-weight: bold;
         font-size: 34px;
@@ -1095,7 +1115,7 @@
             font-family: DM Sans;
             font-style: normal;
             font-weight: bold;
-            font-size: 16px;
+            font-size: 15px;
             line-height: 25px;
             /* identical to box height */
             text-align: center;
@@ -1104,18 +1124,19 @@
             margin-top: 35px;
 
             @media screen and(min-width: 44em) {
-              font-size: 20px;
+              font-size: 16px;
             }
           }
           p {
-            font-family: DM Sans;
+            font-family: "DM Sans";
             font-style: normal;
             font-weight: normal;
-            font-size: 16px;
+            font-size: 15px;
             line-height: 22px;
             text-align: center;
+            opacity: 0.4;
             @media screen and(min-width: 44em) {
-              font-size: 17px;
+              font-size: 15px;
             }
           }
 
@@ -1167,13 +1188,13 @@
             }
 
             .insta {
-              background: url(/images/Vector-3.jpg);
+              background: url(/images/Vector-2.jpg);
               background-size: 100% 100%;
               background-repeat: no-repeat;
             }
 
             .twt {
-              background: url(/images/Vector.jpg);
+              background: url(/images/vector-3.jpg);
               background-size: 100% 100%;
               background-repeat: no-repeat;
             }
@@ -1232,6 +1253,10 @@
 
         @media screen and(min-width: 44em) {
           width: 30%;
+          margin: {
+            top: auto;
+            bottom: auto;
+          }
         }
 
         h3 {
@@ -1243,7 +1268,7 @@
           /* or 38px */
           //   margin-left: 25px;
           letter-spacing: -0.03em;
-          color: #e84c3d;
+          color: #ff0000;
         }
 
         .subsribe {
@@ -1257,6 +1282,8 @@
           margin-top: 30px;
           background: transparent;
           // touch-action: none;
+          font-family: DM Sans;
+
           &:focus {
             outline: none;
           }
@@ -1267,7 +1294,7 @@
           width: 150px;
           height: 60px;
           color: #ffffff;
-          background: #e84c3d;
+          background: #ff0000;
           border-radius: 20px;
           font-family: DM Sans;
           font-style: normal;
@@ -1317,7 +1344,7 @@
             /* or 38px */
             //   margin-left: 25px;
             letter-spacing: -0.03em;
-            color: #e84c3d;
+            color: #ff0000;
 
             @media screen and(min-width: 44em) {
               margin-left: -100px;
@@ -1337,6 +1364,11 @@
 
             @media screen and(min-width: 44em) {
               justify-content: flex-start;
+              flex-wrap: nowrap;
+              flex-direction: column;
+              // background-color: #ff2b06;
+              position: relative;
+              left: -45px;
               // line-height: 10px;
             }
 
@@ -1377,7 +1409,7 @@
             /* or 38px */
             //   margin-left: 25px;
             letter-spacing: -0.03em;
-            color: #e84c3d;
+            color: #ff0000;
 
             @media screen and(min-width: 44em) {
             }
@@ -1458,7 +1490,7 @@
 
   .buy-ticket {
     width: 90%;
-    height: 80%;
+    height: 70%;
     background-color: #ffffff;
     overflow-y: auto;
     position: relative;
@@ -1470,8 +1502,8 @@
       display: none;
     }
     @media screen and(min-width: 44em) {
-      width: 45%;
-      height: 90%;
+      width: 40%;
+      height: 80%;
       background-color: #ffffff;
       overflow-y: auto;
       position: relative;
@@ -1490,7 +1522,7 @@
         position: absolute;
         right: 50px;
         font-size: 33px;
-        color: #e84c3d;
+        color: #ff0000;
       }
     }
     .form-body {
@@ -1553,177 +1585,31 @@
           font-size: 17px;
         }
       }
-      .food-reserve {
-        font-family: "DM Sans";
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 36px;
-        letter-spacing: -0.03em;
-        color: #000000;
-        margin: {
-          top: 20px;
-          bottom: 20px;
-        }
-        @media screen and (min-width: 44em) {
-          font-family: "DM Sans";
-          font-style: normal;
-          font-weight: bold;
-          font-size: 28px;
-          line-height: 36px;
-          letter-spacing: -0.03em;
-          color: #000000;
-          margin: {
-            top: 30px;
-            bottom: 30px;
-          }
-        }
-      }
+
       .double-sec {
         width: 100%;
         display: flex;
         flex-direction: column;
+        margin-top: 10px;
 
         @media screen and(min-width: 44em) {
           width: 100%;
           display: flex;
-          flex-direction: row;
+          flex-direction: column;
+          margin-top: 30px;
         }
-        label {
-          display: block;
-          font-family: "DM Sans";
-          font-style: normal;
-          font-weight: bold;
-          font-size: 13px;
-          line-height: 20px;
-          /* identical to box height */
-          letter-spacing: -0.03em;
-          color: #000000;
-          margin: 10px 0 5 0;
-        }
-        .right-sec {
-          flex: 1;
 
-          .custom-select {
-            width: 90%;
-            position: relative;
-            // background-color: red;
-            height: 30px;
-            margin-bottom: 5px;
-
-            @media screen and (min-width: 44em) {
-              width: 90%;
-              position: relative;
-              // background-color: red;
-              height: 50px;
-              margin-bottom: 5px;
-            }
-            select {
-              display: none;
-            }
-            .select-selected {
-              background-color: #ffffff;
-
-              &:after {
-                position: absolute;
-                content: "";
-                top: 22px;
-                right: 10px;
-                width: 0;
-                height: 0;
-                border: 6px solid transparent;
-                border-color: rgb(5, 5, 5) transparent transparent transparent;
-                opacity: 0.9;
-              }
-            }
-            .select-arrow-active:after {
-              border-color: transparent transparent rgb(5, 5, 5) transparent;
-              top: 15px;
-              opacity: 0.9;
-            }
-            .select-items {
-              position: absolute;
-              background-color: #ffffff;
-              top: 100%;
-              left: 0;
-              right: 0;
-              z-index: 99;
-              border: 1px solid rgba(0, 0, 0, 0.11);
-
-              @media screen and(min-width: 44em) {
-                position: absolute;
-                background-color: #ffffff;
-                top: 100%;
-                left: 0;
-                right: 0;
-                z-index: 99;
-                border: 1px solid rgba(0, 0, 0, 0.11);
-              }
-            }
-            .select-items div,
-            .select-selected {
-              color: #000000;
-              padding: 8px 0px;
-              border: 1px solid transparent;
-              border-color: transparent transparent rgba(0, 0, 0, 0.1)
-                transparent;
-              cursor: pointer;
-              user-select: none;
-              opacity: 0.6;
-              text-transform: capitalize;
-              font-family: "DM Sans";
-              font-style: normal;
-              font-weight: normal;
-              font-size: 13px;
-              line-height: 100.7%;
-              /* identical to box height, or 33px */
-              letter-spacing: -0.03em;
-              color: #000000;
-              // opacity: 0.5;
-              text-align: left;
-
-              @media screen and(min-width:44em) {
-                color: #000000;
-                padding: 8px 0px;
-                border: 1px solid transparent;
-                border-color: transparent transparent rgba(0, 0, 0, 0.1)
-                  transparent;
-                cursor: pointer;
-                user-select: none;
-                opacity: 0.6;
-                text-transform: capitalize;
-                font-family: "DM Sans";
-                font-style: normal;
-                font-weight: normal;
-                font-size: 17px;
-                line-height: 191.7%;
-                /* identical to box height, or 33px */
-                letter-spacing: -0.03em;
-                color: #000000;
-                // opacity: 0.5;
-                text-align: left;
-              }
-            }
-            .select-hide {
-              display: none;
-            }
-            .select-items div:hover,
-            .same-as-selected {
-              background-color: rgba(0, 0, 0, 0.1);
-            }
-          }
-        }
         .left-sec {
-          flex: 1;
+          // flex: 1;
           display: flex;
-          flex-direction: row;
-          align-items: center;
+          flex-direction: column;
+          align-items: flex-start;
           justify-content: start;
 
           @media screen and(min-width: 44em) {
             display: flex;
             flex-direction: column;
-            align-items: flex-end;
+            align-items: flex-start;
             justify-content: center;
           }
 
@@ -1737,10 +1623,10 @@
             /* identical to box height */
             letter-spacing: -0.03em;
             color: #000000;
-            order: 2;
+            order: 1;
             position: relative;
-            left: 12px;
-            top: 10px;
+            left: 0;
+            top: 15px;
 
             @media screen and(min-width: 44em) {
               font-family: "DM Sans";
@@ -1764,10 +1650,11 @@
             line-height: 44px;
             text-align: right;
             letter-spacing: -0.03em;
-            color: #e84c3d;
-            order: 3;
+            color: #ff0000;
+
+            order: 2;
             position: relative;
-            right: -20px;
+            right: 0;
             top: 10px;
 
             // display: block;
@@ -1779,19 +1666,21 @@
               line-height: 44px;
               text-align: right;
               letter-spacing: -0.03em;
-              color: #e84c3d;
+              color: #ff0000;
+
               order: 2;
               right: 0;
-              top: 0;
+              top: 15px;
             }
           }
           .proceed {
-            width: 50%;
-            order: 1;
+            width: 55%;
+            order: 3;
             height: 50px;
             border-radius: 20px;
             border: none;
-            background: #e84c3d;
+            background: #ff0000;
+
             font-family: "DM Sans";
             font-style: normal;
             font-weight: normal;
@@ -1801,15 +1690,16 @@
             text-align: center;
             letter-spacing: -0.03em;
             color: #ffffff;
-            margin-top: 20px;
+            margin-top: 10px;
             padding: 6px;
 
             @media screen and(min-width: 44em) {
-              width: 80%;
+              width: 50%;
               height: 50px;
               border-radius: 20px;
               border: none;
-              background: #e84c3d;
+              background: #ff0000;
+
               font-family: "DM Sans";
               font-style: normal;
               font-weight: normal;
@@ -1819,8 +1709,31 @@
               text-align: center;
               letter-spacing: -0.03em;
               color: #ffffff;
-              margin-top: 10px;
+              margin-top: 25px;
               order: 3;
+            }
+          }
+          .note {
+            order: 4;
+            font-family: "DM Sans";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 11px;
+            line-height: 18px;
+            letter-spacing: -0.03em;
+
+            color: #ff0000;
+            margin-top: 10px;
+            @media screen and(min-width: 44em) {
+              order: 4;
+              font-family: "DM Sans";
+              font-style: normal;
+              font-weight: normal;
+              font-size: 13px;
+              line-height: 18px;
+              letter-spacing: -0.03em;
+              margin-top: 15px;
+              color: #ff0000;
             }
           }
         }
