@@ -1270,7 +1270,7 @@
     grid-auto-rows: 165px;
     -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    padding: 70px;
+    padding: 80px;
   }
 }
 
@@ -1801,7 +1801,7 @@
 
 .buy-ticket-wrap .buy-ticket {
   width: 90%;
-  height: 70%;
+  height: 450px;
   background-color: #ffffff;
   overflow-y: auto;
   position: relative;

@@ -1085,7 +1085,7 @@
         @media screen and (max-width: 375px) {
           grid-auto-rows: 165px;
           grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-          padding: 70px;
+          padding: 80px;
         }
 
         /* iphone X , XS, 11 Pro, 12 Mini */
@@ -1507,7 +1507,7 @@
 
   .buy-ticket {
     width: 90%;
-    height: 70%;
+    height: 450px;
     background-color: #ffffff;
     overflow-y: auto;
     position: relative;
