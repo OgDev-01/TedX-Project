@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
   $(".cancel").click(() => {
     $(".buy-ticket-wrap").removeClass("buy-reveal");
   });
-
+ 
   // windows scroll listener
   document.addEventListener("scroll", function () {
     let scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
