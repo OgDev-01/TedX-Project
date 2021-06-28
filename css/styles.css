@@ -1823,7 +1823,13 @@
           transform: translateX(-1500px);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  padding-top: 100px;
+  padding-top: 26vh;
+}
+
+@media screen and (min-width: 44em) {
+  .buy-ticket-wrap {
+    padding-top: 150px;
+  }
 }
 
 .buy-ticket-wrap .buy-ticket {
