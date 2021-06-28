@@ -2053,7 +2053,6 @@
   letter-spacing: -0.03em;
   color: #ffffff;
   margin-top: 10px;
-  padding: 6px;
 }
 
 @media screen and (min-width: 44em) {
@@ -2082,6 +2081,17 @@
 .buy-ticket-wrap .buy-ticket .form-body .double-sec .left-sec .proceed a {
   text-decoration: none;
   color: #ffffff;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .buy-reveal {
