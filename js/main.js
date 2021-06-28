@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  $(this).scrollTop(0);
   let breakers = document.querySelector("br");
   let mobileLayout = window.matchMedia("(max-width: 44em)");
   let menuClicked = false;
